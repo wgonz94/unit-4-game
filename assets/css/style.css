@@ -3,14 +3,11 @@ body{
 }
 
 
-h2 {
-    color: #ffffff;
-}
-
 #crystalHeader{
     background: orangered;
     float: left;
-    padding: 10px;
+    padding: 10px;   
+    color: #ffffff;
 }
 
 .gameInfo{
@@ -21,19 +18,25 @@ h2 {
     overflow: auto;
     width: 28%;
     padding-bottom: 5%;
+    color: green;
+    font-weight: bold;
     
+}
+h1{
+
 }
 
 p {
-    color: green;
+    color: black;
     font-weight: bold;
 }
 
-.randomFont{
-    color: black
-
+.winlossBox{
+    background: lightskyblue;
+    display: block;
+    clear: both;
 }
 
 .randomTargetnumber{
-    background: lightgreen;
+    background: rgb(87, 150, 87);
 }
