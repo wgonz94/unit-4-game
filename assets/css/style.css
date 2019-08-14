@@ -38,4 +38,11 @@ p {
     width: 14%;
 }
 
-
+.randomImages{
+    clear: both;
+}
+.imageOne, .imageTwo, .imageThree, .imageFour{
+    float: left;
+    margin-left: 5px;
+    width:5%;
+}
