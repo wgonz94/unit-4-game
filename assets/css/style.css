@@ -28,3 +28,12 @@ p {
     color: green;
     font-weight: bold;
 }
+
+.randomFont{
+    color: black
+
+}
+
+.randomTargetnumber{
+    background: lightgreen;
+}
