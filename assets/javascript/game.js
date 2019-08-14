@@ -3,13 +3,13 @@ var targetNumber = Math.floor(Math.random()* 102) + 19;
 $("#goalNumber").text(targetNumber);
 
 var counter = 0;
-
-var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+var counterWin = 0;
+var counterLose = 0;
 
 var incrementRandom = Math.floor(Math.random()* 11) + 1;
 var incrementRandomtwo = Math.floor(Math.random()* 11) + 1;
-// var incrementRandomthree = numberOptions[Math.floor(Math.random())];
-// var incrementRandomfour = numberOptions[Math.floor(Math.random())];
+var incrementRandomthree = Math.floor(Math.random()* 11) + 1;
+var incrementRandomfour = Math.floor(Math.random()* 11) + 1;
 
 $(".greenJewel").on("click", function(){
     counter += incrementRandom;
@@ -31,3 +31,8 @@ $(".starJewel").on("click", function(){
     $("#scoreTotal").text(counter);
 
 });
+
+if (scoreTotal = goalNumber) {
+    alert("You Win!!")
+
+}
