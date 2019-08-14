@@ -45,15 +45,17 @@ $(".starJewel").on("click", function(){
 
 });
 
-if (scoreTotal = goalNumber) {
+ if (scoreTotal === targetNumber) {
     counterWin += incrementOne
     $("#winSpot").text(counterWin)
     alert("You Win!!")
     reset()
 }
-if (scoreTotal >= goalNumber) {
+if (scoreTotal >= targetNumber) {
     counterLose += incrementOne
     $("#loseSpot").text(counterLose)
     alert("You Lose!!")
     reset()
 }
+
+
