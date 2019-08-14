@@ -12,3 +12,14 @@ h2 {
     float: left;
     padding: 10px;
 }
+
+.gameInfo{
+    display: block;
+    float: left;
+    background: bisque;
+}
+
+p {
+    color: green;
+    font-weight: bold;
+}
