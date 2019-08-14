@@ -51,4 +51,9 @@ if (scoreTotal = goalNumber) {
     alert("You Win!!")
     reset()
 }
-if (scoreTotal >= goalNumber)
+if (scoreTotal >= goalNumber) {
+    counterLose += incrementOne
+    $("#loseSpot").text(counterLose)
+    alert("You Lose!!")
+    reset()
+}
