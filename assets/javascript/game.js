@@ -11,6 +11,18 @@ var incrementRandomtwo = Math.floor(Math.random()* 11) + 1;
 var incrementRandomthree = Math.floor(Math.random()* 11) + 1;
 var incrementRandomfour = Math.floor(Math.random()* 11) + 1;
 
+var reset = function(){
+    var targetNumber = Math.floor(Math.random()* 102) + 19;
+
+    var counter = 0;
+
+    var incrementRandom = Math.floor(Math.random()* 11) + 1;
+    var incrementRandomtwo = Math.floor(Math.random()* 11) + 1;
+    var incrementRandomthree = Math.floor(Math.random()* 11) + 1;
+    var incrementRandomfour = Math.floor(Math.random()* 11) + 1;
+
+
+};
 $(".greenJewel").on("click", function(){
     counter += incrementRandom;
     $("#scoreTotal").text(counter);
