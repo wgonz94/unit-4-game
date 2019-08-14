@@ -5,14 +5,13 @@ body{
 
 #crystalHeader{
     background: orangered;
-    float: left;
+    text-align: center;
+    width: 14%;
     padding: 10px;   
     color: #ffffff;
 }
 
 .gameInfo{
-    display: block;
-    float: left;
     background: bisque;
     padding: 10px;
     overflow: auto;
@@ -28,6 +27,7 @@ p {
     font-weight: bold;
 }
 .randomTargetnumber{
+    float: left;
     background: rgb(87, 150, 87);
     width: 15%;
 }
