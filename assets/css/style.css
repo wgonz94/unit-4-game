@@ -46,3 +46,17 @@ p {
     margin-left: 5px;
     width: 7%;
 }
+
+.scoreContainer{
+    clear: both;
+}
+
+.scoreTitle, .scoreKept {
+    background: seagreen;
+    width: 15%;
+    padding: 3px;
+    
+}
+.scoreKept{
+    margin-top: 10px;
+}
