@@ -22,21 +22,18 @@ body{
     font-weight: bold;
     
 }
-h1{
-
-}
 
 p {
     color: black;
     font-weight: bold;
 }
+.randomTargetnumber{
+    background: rgb(87, 150, 87);
+    width: 15%;
+}
 
 .winlossBox{
     background: lightskyblue;
-    display: block;
-    clear: both;
+    width: 15%;
 }
 
-.randomTargetnumber{
-    background: rgb(87, 150, 87);
-}
