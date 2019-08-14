@@ -1,0 +1,14 @@
+body{
+    background-image: image()
+}
+
+
+h2 {
+    color: #ffffff;
+}
+
+#crystalHeader{
+    background: orangered;
+    float: left;
+    padding: 10px;
+}
