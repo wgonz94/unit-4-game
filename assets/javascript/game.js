@@ -6,7 +6,10 @@ var counter = 0;
 
 var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-var incrementRandom = numberOptions[Math.round(Math.random())];
+var incrementRandom = numberOptions[Math.floor(Math.random())];
+var incrementRandomtwo = numberOptions[Math.floor(Math.random())];
+var incrementRandomthree = numberOptions[Math.floor(Math.random())];
+var incrementRandomfour = numberOptions[Math.floor(Math.random())];
 
 $(".greenJewel").on("click", function(){
     counter += incrementRandom;
@@ -14,17 +17,17 @@ $(".greenJewel").on("click", function(){
 
 });
 $(".redJewel").on("click", function(){
-    counter += incrementRandom;
+    counter += incrementRandomtwo;
     $("#scoreTotal").text(counter);
 
 });
 $(".diamondJewel").on("click", function(){
-    counter += incrementRandom;
+    counter += incrementRandomthree;
     $("#scoreTotal").text(counter);
 
 });
 $(".starJewel").on("click", function(){
-    counter += incrementRandom;
+    counter += incrementRandomfour;
     $("#scoreTotal").text(counter);
 
 });
