@@ -6,10 +6,10 @@ var counter = 0;
 
 var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-var incrementRandom = numberOptions[Math.floor(Math.random())];
-var incrementRandomtwo = numberOptions[Math.floor(Math.random())];
-var incrementRandomthree = numberOptions[Math.floor(Math.random())];
-var incrementRandomfour = numberOptions[Math.floor(Math.random())];
+var incrementRandom = Math.floor(Math.random()* numberOptions);
+var incrementRandomtwo = Math.floor(Math.random()* numberOptions);
+// var incrementRandomthree = numberOptions[Math.floor(Math.random())];
+// var incrementRandomfour = numberOptions[Math.floor(Math.random())];
 
 $(".greenJewel").on("click", function(){
     counter += incrementRandom;
