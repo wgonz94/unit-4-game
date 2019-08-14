@@ -5,6 +5,7 @@ $("#goalNumber").text(targetNumber);
 var counter = 0;
 var counterWin = 0;
 var counterLose = 0;
+var incrementOne = 1;
 
 var incrementRandom = Math.floor(Math.random()* 11) + 1;
 var incrementRandomtwo = Math.floor(Math.random()* 11) + 1;
@@ -45,6 +46,8 @@ $(".starJewel").on("click", function(){
 });
 
 if (scoreTotal = goalNumber) {
+    counterWin += incrementOne
+    $("#")
     alert("You Win!!")
 
 }
