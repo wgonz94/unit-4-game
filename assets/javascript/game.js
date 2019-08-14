@@ -13,3 +13,18 @@ $(".greenJewel").on("click", function(){
     $("#scoreTotal").text(counter);
 
 });
+$(".redJewel").on("click", function(){
+    counter += incrementRandom;
+    $("#scoreTotal").text(counter);
+
+});
+$(".diamondJewel").on("click", function(){
+    counter += incrementRandom;
+    $("#scoreTotal").text(counter);
+
+});
+$(".starJewel").on("click", function(){
+    counter += incrementRandom;
+    $("#scoreTotal").text(counter);
+
+});
