@@ -29,11 +29,12 @@ p {
 .randomTargetnumber{
     float: left;
     background: rgb(87, 150, 87);
-    width: 15%;
+    width: 13%;
 }
 
 .winlossBox{
+    float: left;
     background: lightskyblue;
-    width: 15%;
+    width: 14%;
 }
 
