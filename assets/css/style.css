@@ -17,6 +17,11 @@ h2 {
     display: block;
     float: left;
     background: bisque;
+    padding: 10px;
+    overflow: auto;
+    width: 28%;
+    padding-bottom: 5%;
+    
 }
 
 p {
