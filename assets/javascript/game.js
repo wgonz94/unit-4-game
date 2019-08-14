@@ -10,4 +10,6 @@ var incrementRandom = numberOptions[Math.round(Math.random())];
 
 $(".greenJewel").on("click", function(){
     counter += incrementRandom;
+    $("#scoreTotal").text(counter);
+
 });
