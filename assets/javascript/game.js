@@ -47,7 +47,8 @@ $(".starJewel").on("click", function(){
 
 if (scoreTotal = goalNumber) {
     counterWin += incrementOne
-    $("#")
+    $("#winSpot").text(counterWin)
     alert("You Win!!")
-
+    reset()
 }
+if (scoreTotal >= goalNumber)
