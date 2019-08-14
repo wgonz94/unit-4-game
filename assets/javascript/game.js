@@ -6,8 +6,8 @@ var counter = 0;
 
 var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-var incrementRandom = Math.floor(Math.random()* numberOptions);
-var incrementRandomtwo = Math.floor(Math.random()* numberOptions);
+var incrementRandom = Math.floor(Math.random()* 11) + 1;
+var incrementRandomtwo = Math.floor(Math.random()* 11) + 1;
 // var incrementRandomthree = numberOptions[Math.floor(Math.random())];
 // var incrementRandomfour = numberOptions[Math.floor(Math.random())];
 
