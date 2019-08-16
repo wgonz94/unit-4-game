@@ -5,7 +5,7 @@ $("#goalNumber").text(targetNumber);
 var counter = 0;
 var counterWin = 0;
 var counterLose = 0;
-var incrementOne = 1;
+
 
 var incrementRandom = Math.floor(Math.random()* 11) + 1;
 var incrementRandomtwo = Math.floor(Math.random()* 11) + 1;
@@ -13,14 +13,15 @@ var incrementRandomthree = Math.floor(Math.random()* 11) + 1;
 var incrementRandomfour = Math.floor(Math.random()* 11) + 1;
 
 var reset = function(){
-    var targetNumber = Math.floor(Math.random()* 102) + 19;
+    targetNumber = Math.floor(Math.random()* 102) + 19;
+    $("#goalNumber").text(targetNumber)
+    counter = 0;
+    $("#scoreTotal").text(counter)
 
-    var counter = 0;
-
-    var incrementRandom = Math.floor(Math.random()* 11) + 1;
-    var incrementRandomtwo = Math.floor(Math.random()* 11) + 1;
-    var incrementRandomthree = Math.floor(Math.random()* 11) + 1;
-    var incrementRandomfour = Math.floor(Math.random()* 11) + 1;
+    incrementRandom = Math.floor(Math.random()* 11) + 1;
+    incrementRandomtwo = Math.floor(Math.random()* 11) + 1;
+    incrementRandomthree = Math.floor(Math.random()* 11) + 1;
+    incrementRandomfour = Math.floor(Math.random()* 11) + 1;
 
 
 };
@@ -28,33 +29,66 @@ $(".greenJewel").on("click", function(){
     counter += incrementRandom;
     $("#scoreTotal").text(counter);
 
+    if (targetNumber == counter) {
+        counterWin ++;
+        $("#winSpot").text(counterWin);
+        reset();
+    } else if (targetNumber < counter) {
+        counterLose ++;
+        $("#loseSpot").text(counterLose);
+        alert("You Lose!!");
+        reset();
+    };
+
 });
 $(".redJewel").on("click", function(){
     counter += incrementRandomtwo;
     $("#scoreTotal").text(counter);
+
+    if (targetNumber == counter) {
+        counterWin ++;
+        $("#winSpot").text(counterWin);
+        reset();
+    } else if (targetNumber < counter){
+        counterLose ++;
+        $("#loseSpot").text(counterLose);
+        alert("You Lose!!");
+        reset();
+    };
 
 });
 $(".diamondJewel").on("click", function(){
     counter += incrementRandomthree;
     $("#scoreTotal").text(counter);
 
+    if (targetNumber == counter) {
+        counterWin ++;
+        $("#winSpot").text(counterWin);
+        reset();
+    } else if (targetNumber < counter){
+        counterLose ++;
+        $("#loseSpot").text(counterLose);
+        alert("You Lose!!");
+        reset();
+    };
+
 });
 $(".starJewel").on("click", function(){
     counter += incrementRandomfour;
     $("#scoreTotal").text(counter);
 
+    if (targetNumber == counter) {
+        counterWin ++;
+        $("#winSpot").text(counterWin);
+        reset();
+    } else if (targetNumber < counter){
+        counterLose ++;
+        $("#loseSpot").text(counterLose);
+        alert("You Lose!!");
+        reset();
+    };
 });
 
- if (counter === targetNumber) {
-    counterWin += incrementOne;
-    $("#winSpot").text(counterWin);
-    reset();
-}
-if (counter > targetNumber) {
-    counterLose += incrementOne
-    $("#loseSpot").text(counterLose);
-    alert("You Lose!!");
-    reset();
-}
+    
 
-
+ 
