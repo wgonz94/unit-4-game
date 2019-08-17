@@ -30,12 +30,16 @@ p {
     float: left;
     background: rgb(87, 150, 87);
     width: 13%;
+    height: 10%;
 }
 
 .winlossBox{
     float: left;
     background: lightskyblue;
     width: 14%;
+    margin: auto;
+    height: 81px;
+    
 }
 
 .randomImages{
